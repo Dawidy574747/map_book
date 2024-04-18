@@ -3,5 +3,6 @@ from untils.crud import show_users
 
 
 
-add_new_user(users)
+
+search_user(users)
 print(users)
