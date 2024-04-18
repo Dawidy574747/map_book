@@ -4,10 +4,11 @@ users: list[dict] = [
     {"name": "Kamil", "sourname": "Gil", "posts": 1000000},
     {"name": "Daniel", "sourname": "Blaszczyk", "posts": 6}
 
-
 ]
 
-for user in users:
-    print(f"Twoj znajomy {user['name']} opublikowal: {user['posts']}")
 
+def show_users(user_list: list[dict]) -> None:
+    for user in user_list:
+        print(f"Twoj znajomy {user['name']} opublikowal: {user['posts']}")
 
+show_users(users)
